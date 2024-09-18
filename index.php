@@ -16,7 +16,6 @@
 	
 		$countfiles = count($_FILES['file']['name']);		# удалить
 		echo "Всего файлов " . $countfiles . "\n";			# удалить
-		echo "POST!\n";										# удалить
 		print_r($_FILES);									# удалить
 	}
 	
