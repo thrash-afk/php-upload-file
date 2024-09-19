@@ -28,12 +28,7 @@
 		
 		if( is_dir($upload_path . $tel) === false ) {
 			mkdir($upload_path . (string)$tel);
-			echo "Create folder";
 		}
-		else {
-			echo "Folder exist";
-		}
-		
 		
 		$zip = new ZipArchive();
 		$zip -> open(__DIR__ . "/" . $upload_path . $tel . "/" . $zipName, ZipArchive::CREATE|ZipArchive::OVERWRITE);
